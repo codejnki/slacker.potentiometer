@@ -1,6 +1,6 @@
 #include <potentiometer.h>
 
-Potentiometer _pot(0);
+slacker::Potentiometer _pot(0);
 
 void setup()
 {

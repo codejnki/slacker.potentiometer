@@ -1,12 +1,15 @@
 #include "Arduino.h"
 #include "potentiometer.h"
 
-Potentiometer::Potentiometer(int pin)
+namespace slacker
 {
-  _pin = pin;
-}
+  Potentiometer::Potentiometer(int pin)
+  {
+    _pin = pin;
+  }
 
-Potentiometer::Read()
-{
-  return analogRead(_pin);
+  Potentiometer::ReadValue()
+  {
+    return analogRead(_pin);
+  }
 }

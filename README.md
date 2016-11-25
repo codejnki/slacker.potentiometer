@@ -9,7 +9,7 @@ To install this library just place the entire folder as a sub folder in to your 
 ```cpp
 #include <potentiometer.h>
 
-Potentiometer _pot(0); // use one of the analog in ports
+slacker::Potentiometer _pot(0); // use one of the analog in ports
 
 // your awesome code goes here
 ```
@@ -17,7 +17,7 @@ Potentiometer _pot(0); // use one of the analog in ports
 ## Methods
 
 ```cpp
-Read()
+ReadValue()
 ```
 
 Returns the current reading from 0-1023.
