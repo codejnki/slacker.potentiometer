@@ -8,13 +8,16 @@
 
 #include "Arduino.h"
 
-class Potentiometer
+namespace slacker
 {
-  public:
-    Potentiometer(int pin);
-    int Read();
-  private:
-    int _pin;
-};
+  class Potentiometer
+  {
+    public:
+      Potentiometer(int pin);
+      int ReadValue();
+    private:
+      int _pin;
+  };
+}
 
 #endif
